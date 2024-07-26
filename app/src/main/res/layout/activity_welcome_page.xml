@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomePage_Activity">
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/endore_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="425dp"
+                android:text="Welcome to इ-ndore"
+                android:textColor="#090909"
+                android:textSize="37sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/dashed_line"
+                android:layout_width="130dp"
+                android:layout_height="1dp"
+                android:background="#090909"
+                android:padding="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@id/sign_in_as"
+                app:layout_constraintEnd_toStartOf="@id/sign_in_as"
+                app:layout_constraintHorizontal_bias="0.5"
+               app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/sign_in_as"
+                app:layout_constraintVertical_bias="0.5">
+
+            </ImageView>
+
+
+
+            <TextView
+                android:id="@+id/sign_in_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="485dp"
+                android:text="Sign in as"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/dashed_line_2"
+                android:layout_width="130dp"
+                android:layout_height="1dp"
+                android:background="#090909"
+                android:padding="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@id/sign_in_as"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/sign_in_as"
+                app:layout_constraintTop_toTopOf="@id/sign_in_as"
+                app:layout_constraintVertical_bias="0.5">
+
+            </ImageView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/host_btn"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_btn_intro3"
+                android:text="Host"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sign_in_as"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.09"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/employee_btn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_btn_intro3"
+
+                android:text="Employee"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.09"
+                app:layout_constraintTop_toBottomOf="@id/host_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_btn"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_btn_intro3"
+
+                android:text="User"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/employee_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_btn_intro3"
+                android:text="Register as user"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.3"
+                app:layout_constraintTop_toBottomOf="@id/user_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/bottom_text_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/register_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.09"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By using your email we ensure a secure login process."
+                    android:textColor="#000000"
+                    android:textSize="12sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:linksClickable="true"
+                    android:text="By logging in you will be accepting our Terms and Conditions."
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
