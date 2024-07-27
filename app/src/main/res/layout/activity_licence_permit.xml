@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LicencePermit_Activity">
+
+
+    <TextView
+        android:id="@+id/license_permit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Licence and Permit"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/dashed_line"
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:background="#090909"
+        android:padding="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/license_permit_text"
+        app:layout_constraintVertical_bias="0.01">
+
+    </ImageView>
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dashed_line"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/cardview_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintTop_toTopOf="@id/scrollview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Land_property_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/property_icon"
+
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="60dp"
+                                android:text="Land and Proerty"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Management"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <!-- CardView for My Classes -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/health_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/health_icon"
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="60dp"
+                                android:text="Health and"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Sanitation"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/public_work_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/public_icon"
+
+                                android:layout_marginTop="16dp"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Public Works and Infrastructure"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <!-- CardView for My Classes -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/social_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/social_service_icon"
+
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Social            Services"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"
+                                android:padding="8dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/environmental_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/environment_manage_icon"
+
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Environmental Management"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <!-- CardView for My Classes -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/safety_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/security_icon"
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Public Safety and Security"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/economic_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/economic_icon"
+
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Economic Development"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <!-- CardView for My Classes -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/finance_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/administration_icon"
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Finance and Administration"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/it_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/it_icon"
+
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Information Technology"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <!-- CardView for My Classes -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/legal_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="145dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/legal_icon"
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Legal and Compliance"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/housing_urban_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <FrameLayout
+                            android:layout_width="160dp"
+                            android:layout_height="125dp"
+                            android:background="@drawable/licence_permit_bkg">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:src="@drawable/housing_urban_icon"
+
+                                android:layout_marginTop="16dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:text="Housing and Urban Development"
+                                android:textColor="#408CE5"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

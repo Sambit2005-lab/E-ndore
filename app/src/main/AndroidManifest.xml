@@ -19,6 +19,9 @@
             android:name=".chat_sent_by_employee"
             android:exported="false" />
         <activity
+            android:name=".LicencePermit_Activity"
+            android:exported="false" />
+        <activity
             android:name=".chat_sent"
             android:exported="false" />
         <activity
