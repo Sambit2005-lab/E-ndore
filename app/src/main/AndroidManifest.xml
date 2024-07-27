@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Endore"
         tools:targetApi="31">
         <activity
+            android:name=".InfoPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".formCategory_dialog"
             android:exported="false" />
         <activity
