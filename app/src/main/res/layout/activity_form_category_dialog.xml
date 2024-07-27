@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formCategory_dialog"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the category of application:"
+        android:textSize="22sp">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/task_list_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:layout_margin="18dp"
+        >
+
+
+        <RadioButton
+            android:id="@+id/land_property_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Land and Property Management"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/health_sanitation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Health and Sanitation"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/work_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Public Works and Infrastructure"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/social_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Social Services"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/environmental_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Environmental Management"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/safety_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Public Safety and Security"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/economic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Economic Development"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/finance_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Finance and Administration"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/housing_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Housing and Urban Development"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/it_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Information Technology"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/legal_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Legal and Compliance"
+            android:textSize="16sp" />
+
+
+
+        <RadioButton
+            android:id="@+id/other_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Other"
+            android:textSize="16sp" />
+
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
