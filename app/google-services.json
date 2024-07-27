@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "824969085615",
+    "project_id": "e-ndore-c4804",
+    "storage_bucket": "e-ndore-c4804.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824969085615:android:4e1345f1a060e0fa3d8a5a",
+        "android_client_info": {
+          "package_name": "com.codexnovas.e_ndore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7leEgoazULSo-G9c5UjQCXh6mAXRrc5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

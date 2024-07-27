@@ -4,21 +4,31 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class WelcomePage_Activity extends AppCompatActivity {
 
+    // Initialise the variable
+    private AppCompatButton HostBtn;
+    private AppCompatButton EmployeeBtn;
+    private AppCompatButton UserBtn;
+    private AppCompatButton RegisterBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_welcome_page);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        // Set the variable with their id
+        HostBtn = findViewById(R.id.host_btn);
+        EmployeeBtn = findViewById(R.id.employee_btn);
+        UserBtn = findViewById(R.id.user_btn);
+        RegisterBtn = findViewById(R.id.register_btn);
+
+
+
     }
 }
