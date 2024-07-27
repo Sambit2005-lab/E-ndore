@@ -8,8 +8,8 @@
     tools:context=".current_task_unit">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="250dp"
-        android:layout_height="180dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,17 +36,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/complaint_id"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Complaint ID:"
-                        android:padding="10dp"
-                        android:textSize="23sp"
-                        android:textColor="#000000"
-                        android:layout_gravity="start">
 
-                    </TextView>
 
                     <TextView
                         android:id="@+id/complaint_id_number"
@@ -66,7 +56,7 @@
 
 
                 <ImageView
-                    android:layout_width="200dp"
+                    android:layout_width="150dp"
                     android:layout_height="3dp"
                     android:layout_gravity="center_horizontal"
                     android:background="#74F447">
@@ -77,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="bottom"
                     android:padding="2dp"
                     >
 
@@ -88,7 +78,7 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/visibility_icon"
                         android:background="@null"
-                        android:padding="9dp"
+                        android:padding="6dp"
                         >
 
                     </androidx.appcompat.widget.AppCompatImageButton>
@@ -98,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:text="View workspace"
                         android:padding="8dp"
-                        android:textSize="24sp"
+                        android:textSize="18sp"
                         android:textColor="#74F447">
 
                     </TextView>
