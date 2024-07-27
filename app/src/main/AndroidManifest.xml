@@ -54,6 +54,10 @@
         <activity
             android:name=".User.Login_Activity"
             android:exported="false" />
+
+        <activity
+            android:name=".employeeSide.taskpage_employee"
+            android:exported="false" />
         <activity
             android:name=".User.Register_Activity"
             android:exported="false" />

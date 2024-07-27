@@ -97,7 +97,7 @@ public class EmployeeLogin extends AppCompatActivity {
                     if (employee != null && employee.password.equals(password)) {
                         Toast.makeText(EmployeeLogin.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         // Start the main activity or dashboard
-                        startActivity(new Intent(EmployeeLogin.this, MainActivity.class));
+                        startActivity(new Intent(EmployeeLogin.this, taskpage_employee.class));
                     } else {
                         Toast.makeText(EmployeeLogin.this, "Invalid Password", Toast.LENGTH_SHORT).show();
                     }
