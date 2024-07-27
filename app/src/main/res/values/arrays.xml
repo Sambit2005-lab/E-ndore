@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="department_array">
+    <item>select your department </item>
+        <item>Land and Property</item>
+        <item>Health and Sanitation </item>
+        <item>public works and infrastructure </item>
+        <item>Social services </item>
+        <item>Environmental Management </item>
+        <item>public safety and security </item>
+        <item>Economic Development </item>
+        <item>Finance and administration </item>
+        <item>Housing and Urban development </item>
+        <item>Information Technology</item>
+
+    </string-array>
+</resources>

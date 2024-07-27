@@ -4,12 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class WelcomePage_Activity extends AppCompatActivity {
 
@@ -53,7 +49,7 @@ public class WelcomePage_Activity extends AppCompatActivity {
         EmployeeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WelcomePage_Activity.this,EmpoloyeeLogin.class);
+                Intent intent = new Intent(WelcomePage_Activity.this, EmployeeLogin.class);
                 startActivity(intent);
             }
         });

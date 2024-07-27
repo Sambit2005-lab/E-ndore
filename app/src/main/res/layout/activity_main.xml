@@ -92,7 +92,7 @@
     </LinearLayout>
 
 
-    <com.denzcoskun.imageslider.ImageSlider
+    <com.d
         android:id="@+id/imageSlider"
         android:layout_width="350dp"
         android:layout_height="150dp"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="0.109"
         tools:ignore="MissingConstraints">
 
-    </com.denzcoskun.imageslider.ImageSlider>
+    </com.d>
 
     <TextView
         android:id="@+id/what_are_you_looking_for_today"
