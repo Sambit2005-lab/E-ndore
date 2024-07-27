@@ -1,6 +1,8 @@
 package com.codexnovas.e_ndore;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +30,24 @@ public class WelcomePage_Activity extends AppCompatActivity {
         UserBtn = findViewById(R.id.user_btn);
         RegisterBtn = findViewById(R.id.register_btn);
 
+        // register btn set up
+        RegisterBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(WelcomePage_Activity.this,Register_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // Host Btn set up
+        HostBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(WelcomePage_Activity.this,Login_Activity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

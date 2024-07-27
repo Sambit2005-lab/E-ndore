@@ -98,7 +98,7 @@
                 android:layout_width="110dp"
                 android:layout_height="50dp"
                 android:background="@drawable/background_btn_intro3"
-                android:text="Host"
+                android:text="Admin"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
 
