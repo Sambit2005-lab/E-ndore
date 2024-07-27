@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandDetails_Activity">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/please_enter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="*Please fill up the details given below to proceed further"
+                android:textStyle="bold"
+                android:textSize="13sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintVertical_bias="0.02"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/property_application_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="1. Enter your Property application number."
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/please_enter_text"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/property_application_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/property_application_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/property_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="2. Enter your Property ID number."
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_application_edit"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/property_id_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/property_id_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+            <TextView
+                android:id="@+id/property_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="3. Name of the area in which your property "
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_id_edit"
+
+
+                />
+
+            <TextView
+                android:id="@+id/present_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="is present. "
+                android:textSize="17sp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_area_text"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/property_area_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/present_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+            <TextView
+                android:id="@+id/property_tax_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="4. Enter your property Tax ID."
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_area_edit"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/property_tax_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/property_tax_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/swm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="5. Enter your connection type for new SWM ID."
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/property_tax_edit"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/swm_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/swm_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/water_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="6. Enter your application number of water charges."
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/swm_edit"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/water_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/water_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/electric_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="7. Enter your application number of Electric charges."
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/water_edit"
+
+
+                />
+
+
+            <EditText
+                android:id="@+id/electric_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/electric_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/are_you_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="8. Are you involved in any Business/Trade? If yes,"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/electric_edit"
+
+
+                />
+
+            <TextView
+                android:id="@+id/licence_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="please enter your Business/Trade licence ID. "
+                android:textSize="17sp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/are_you_text"
+
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/licence_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:paddingStart="5dp"
+
+                app:layout_constraintStart_toStartOf="@id/please_enter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.02"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@id/licence_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/background_btn_intro3"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/licence_edit"
+
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
