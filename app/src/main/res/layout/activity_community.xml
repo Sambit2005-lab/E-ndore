@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityActivity">
+
+
+    <TextView
+        android:id="@+id/community_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/dashed_line"
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:background="#090909"
+        android:padding="8dp"
+        android:layout_marginStart="22dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/community_text"
+        app:layout_constraintVertical_bias="0.01">
+
+    </ImageView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/community_chat_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintTop_toBottomOf="@id/dashed_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background_intro_2"
+        android:hint="Type your message here"
+        android:paddingStart="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintTop_toBottomOf="@id/community_chat_recyclerview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <ImageButton
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_icon"
+
+        app:layout_constraintStart_toEndOf="@id/message"
+        app:layout_constraintTop_toTopOf="@id/message"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
