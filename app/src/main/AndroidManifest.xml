@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Endore"
         tools:targetApi="31">
         <activity
+            android:name=".chat_sent"
+            android:exported="false" />
+        <activity
             android:name=".UploadPage_Activity"
             android:exported="false" />
         <activity
