@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadPage_Activity">
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload your documents"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/dashed_line"
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:background="#090909"
+        android:padding="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_text"
+        app:layout_constraintVertical_bias="0.01">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/what_to_upload_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. What do you want to upload?"
+        android:textSize="17sp"
+        android:textColor="#090909"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@id/dashed_line"
+        app:layout_constraintTop_toBottomOf="@id/dashed_line"
+        app:layout_constraintVertical_bias="0.01">
+
+    </TextView>
+
+
+    <Spinner
+        android:id="@+id/select_document"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:padding="12dp"
+        android:layout_margin="10dp"
+        android:elevation="7dp"
+        app:boxCornerRadiusTopStart="11dp"
+        app:boxCornerRadiusTopEnd="11dp"
+        app:boxCornerRadiusBottomStart="11dp"
+        app:boxCornerRadiusBottomEnd="11dp"
+        android:background="@drawable/background_intro_2"
+
+        app:layout_constraintStart_toStartOf="@id/what_to_upload_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/what_to_upload_text"
+
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/form_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="2. In which form do you want to upload?"
+        android:textSize="17sp"
+        android:textColor="#090909"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@id/what_to_upload_text"
+        app:layout_constraintTop_toBottomOf="@id/select_document"
+        app:layout_constraintVertical_bias="0.01">
+
+    </TextView>
+
+
+
+    <Spinner
+        android:id="@+id/form_upload"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:padding="12dp"
+        android:layout_margin="10dp"
+        android:elevation="7dp"
+        app:boxCornerRadiusTopStart="11dp"
+        app:boxCornerRadiusTopEnd="11dp"
+        app:boxCornerRadiusBottomStart="11dp"
+        app:boxCornerRadiusBottomEnd="11dp"
+        android:background="@drawable/background_intro_2"
+
+        app:layout_constraintStart_toStartOf="@id/form_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.012"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_text"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

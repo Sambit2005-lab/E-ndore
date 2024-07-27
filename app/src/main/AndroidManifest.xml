@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Endore"
         tools:targetApi="31">
         <activity
+            android:name=".UploadPage_Activity"
+            android:exported="false" />
+        <activity
             android:name=".InfoPageUserSideActivity"
             android:exported="false" />
         <activity
