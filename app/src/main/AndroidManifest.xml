@@ -31,16 +31,16 @@
             android:name=".Host_Task_Activity"
             android:exported="false" />
         <activity
-            android:name=".EmployeeLogin"
+            android:name=".employeeSide.EmployeeLogin"
             android:exported="false" />
         <activity
-            android:name=".EmployeeRegister"
+            android:name=".employeeSide.EmployeeRegister"
             android:exported="false" />
         <activity
-            android:name=".Login_Activity"
+            android:name=".User.Login_Activity"
             android:exported="false" />
         <activity
-            android:name=".Register_Activity"
+            android:name=".User.Register_Activity"
             android:exported="false" />
         <activity
             android:name=".WelcomePage_Activity"
@@ -52,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".User.MainActivity"
             android:exported="false" />
     </application>
 

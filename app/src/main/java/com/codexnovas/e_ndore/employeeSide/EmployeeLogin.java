@@ -1,4 +1,4 @@
-package com.codexnovas.e_ndore;
+package com.codexnovas.e_ndore.employeeSide;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.codexnovas.e_ndore.R;
+import com.codexnovas.e_ndore.User.MainActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -57,7 +59,7 @@ public class EmployeeLogin extends AppCompatActivity {
         resister2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(EmployeeLogin.this,EmployeeRegister.class);
+                Intent intent=new Intent(EmployeeLogin.this, EmployeeRegister.class);
                 startActivity(intent);
             }
         });

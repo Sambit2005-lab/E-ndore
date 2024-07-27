@@ -7,6 +7,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.codexnovas.e_ndore.User.Login_Activity;
+import com.codexnovas.e_ndore.User.Register_Activity;
+import com.codexnovas.e_ndore.employeeSide.EmployeeLogin;
+
 public class WelcomePage_Activity extends AppCompatActivity {
 
     // Initialise the variable
@@ -30,7 +34,7 @@ public class WelcomePage_Activity extends AppCompatActivity {
         RegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(WelcomePage_Activity.this,Register_Activity.class);
+                Intent intent=new Intent(WelcomePage_Activity.this, Register_Activity.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +44,7 @@ public class WelcomePage_Activity extends AppCompatActivity {
         HostBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(WelcomePage_Activity.this,Login_Activity.class);
+                Intent intent= new Intent(WelcomePage_Activity.this, Login_Activity.class);
                 startActivity(intent);
             }
         });
