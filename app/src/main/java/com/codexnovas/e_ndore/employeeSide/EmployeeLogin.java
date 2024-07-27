@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.codexnovas.e_ndore.R;
 import com.codexnovas.e_ndore.User.MainActivity;
+import com.codexnovas.e_ndore.workspace;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -97,7 +98,7 @@ public class EmployeeLogin extends AppCompatActivity {
                     if (employee != null && employee.password.equals(password)) {
                         Toast.makeText(EmployeeLogin.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         // Start the main activity or dashboard
-                        startActivity(new Intent(EmployeeLogin.this, taskpage_employee.class));
+                        startActivity(new Intent(EmployeeLogin.this, workspace.class));
                     } else {
                         Toast.makeText(EmployeeLogin.this, "Invalid Password", Toast.LENGTH_SHORT).show();
                     }
