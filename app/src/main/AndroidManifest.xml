@@ -28,7 +28,7 @@
             android:name=".workspace"
             android:exported="false" />
         <activity
-            android:name=".LandDetails_Activity"
+            android:name=".User.LandDetails_Activity"
             android:exported="false" />
         <activity
             android:name=".CommunityActivity"
