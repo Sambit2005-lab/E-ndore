@@ -13,8 +13,10 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.codexnovas.e_ndore.InfoPageUserSideActivity;
 import com.codexnovas.e_ndore.R;
 import com.codexnovas.e_ndore.User.MainActivity;
+import com.codexnovas.e_ndore.taskpage_employee;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -79,7 +81,7 @@ public class EmployeeRegister extends AppCompatActivity {
         databaseReference.child(employeeId).setValue(employee);
 
         Toast.makeText(EmployeeRegister.this, "Employee Registered", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(EmployeeRegister.this, MainActivity.class);
+        Intent intent = new Intent(EmployeeRegister.this, taskpage_employee.class);
         startActivity(intent);
     }
 }

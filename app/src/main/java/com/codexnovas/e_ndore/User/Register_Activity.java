@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageButton;
 
+import com.codexnovas.e_ndore.InfoPageUserSideActivity;
 import com.codexnovas.e_ndore.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -80,7 +81,7 @@ public class Register_Activity extends AppCompatActivity {
                                     .addOnCompleteListener(verifyTask -> {
                                         if (verifyTask.isSuccessful()) {
                                             Toast.makeText(Register_Activity.this, "Registration successful. Please check your email for verification.", Toast.LENGTH_LONG).show();
-                                            startActivity(new Intent(Register_Activity.this, Login_Activity.class));
+                                            startActivity(new Intent(Register_Activity.this, InfoPageUserSideActivity.class));
                                             finish();
                                         } else {
                                             Toast.makeText(Register_Activity.this, "Failed to send verification email.", Toast.LENGTH_LONG).show();
