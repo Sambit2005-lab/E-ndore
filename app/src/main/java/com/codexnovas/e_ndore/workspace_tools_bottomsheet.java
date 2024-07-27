@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link workspace_tools_bottomsheet#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class workspace_tools_bottomsheet extends Fragment {
+public class workspace_tools_bottomsheet extends BottomSheetDialogFragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
