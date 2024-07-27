@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".workspace_tools_bottomsheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_margin="12dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/work_status_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Work Status"
+            android:textAllCaps="false"
+            android:textSize="22sp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Share_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Document"
+            android:textAllCaps="false"
+            android:textSize="22sp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Retrieve_Data_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retrieve Data"
+            android:textAllCaps="false"
+            android:textSize="22sp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+</FrameLayout>
