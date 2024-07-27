@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Host_Task_Activity">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/task_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center"
+                android:background="@drawable/background_intro_2"
+                android:drawablePadding="10dp"
+                android:paddingStart="5dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:hint="Enter the name of Task"
+
+                android:paddingEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/descrpition_edit"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_intro_2"
+                android:drawablePadding="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:hint="Add Description of the task......."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:backgroundTint="#FFCEC8C8"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/task_name_edit"
+                app:layout_constraintVertical_bias="0.052" />
+
+
+            <TextView
+                android:id="@+id/category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose the category of above :-"
+                android:textSize="17sp"
+                android:textColor="#090909"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/descrpition_edit"
+                app:layout_constraintTop_toBottomOf="@id/descrpition_edit"
+                app:layout_constraintVertical_bias="0.1">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/task_list_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+
+                app:layout_constraintStart_toStartOf="@id/category_text"
+                app:layout_constraintTop_toBottomOf="@id/category_text"
+                app:layout_constraintHorizontal_bias="0.015"
+                app:layout_constraintVertical_bias="0.05"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+
+
+                <RadioButton
+                    android:id="@+id/land_property_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Land and Property Management"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/health_sanitation_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Health and Sanitation"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/work_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Public Works and Infrastructure"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/social_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Social Services"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/environmental_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Environmental Management"
+                    android:textSize="16sp" />
+
+
+                <RadioButton
+                    android:id="@+id/safety_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Public Safety and Security"
+                    android:textSize="16sp" />
+
+
+                <RadioButton
+                    android:id="@+id/economic_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Economic Development"
+                    android:textSize="16sp" />
+
+
+                <RadioButton
+                    android:id="@+id/finance_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Finance and Administration"
+                    android:textSize="16sp" />
+
+
+                <RadioButton
+                    android:id="@+id/housing_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Housing and Urban Development"
+                    android:textSize="16sp" />
+
+
+                <RadioButton
+                    android:id="@+id/it_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Information Technology"
+                    android:textSize="16sp" />
+
+
+                <RadioButton
+                    android:id="@+id/legal_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Legal and Compliance"
+                    android:textSize="16sp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/other_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Other :"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/task_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:hint="Please mention"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+
+
+                    />
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/post_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/background_btn_intro3"
+                android:text="Post"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/task_list_btn"
+
+
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
