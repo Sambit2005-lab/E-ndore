@@ -49,6 +49,23 @@ public class WelcomePage_Activity extends AppCompatActivity {
             }
         });
 
+        // Employee Btn set up
+        EmployeeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomePage_Activity.this,EmpoloyeeLogin.class);
+                startActivity(intent);
+            }
+        });
+
+        //User Btn set up
+        UserBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomePage_Activity.this,Login_Activity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

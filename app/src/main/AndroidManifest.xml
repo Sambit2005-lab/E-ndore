@@ -16,6 +16,9 @@
             android:name=".Host_Task_Activity"
             android:exported="false" />
         <activity
+            android:name=".EmpoloyeeLogin"
+            android:exported="false" />
+        <activity
             android:name=".EmpoloyeeRegister"
             android:exported="false" />
         <activity
@@ -26,15 +29,17 @@
             android:exported="false" />
         <activity
             android:name=".WelcomePage_Activity"
-            android:exported="false" />
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
