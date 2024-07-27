@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.codexnovas.e_ndore.LandDetails_Activity;
 import com.codexnovas.e_ndore.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -59,7 +60,7 @@ public class Login_Activity extends AppCompatActivity {
                         FirebaseUser user = auth.getCurrentUser();
                         if (user != null && user.isEmailVerified()) {
                             // Proceed to the main activity
-                            startActivity(new Intent(Login_Activity.this, MainActivity.class));
+                            startActivity(new Intent(Login_Activity.this, LandDetails_Activity.class));
                             Toast.makeText(Login_Activity.this, "Login successful.", Toast.LENGTH_LONG).show();
                             finish();
                         } else {

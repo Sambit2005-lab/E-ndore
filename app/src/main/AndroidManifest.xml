@@ -19,7 +19,7 @@
             android:name=".UploadPage_Activity"
             android:exported="false" />
         <activity
-            android:name=".InfoPageUserSideActivity"
+            android:name=".User.InfoPageUserSideActivity"
             android:exported="false" />
         <activity
             android:name=".formCategory_dialog"

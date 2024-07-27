@@ -5,17 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".formCategory_dialog"
+
     android:orientation="vertical"
     android:layout_gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choose the category of application:"
-        android:textSize="22sp">
 
-    </TextView>
 
     <RadioGroup
         android:id="@+id/task_list_btn"
@@ -121,6 +115,7 @@
 
 
     </RadioGroup>
+
 
 
 
