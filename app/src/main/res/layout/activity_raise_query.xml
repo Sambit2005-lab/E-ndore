@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RaiseQuery_Activity">
+
+
+    <TextView
+        android:id="@+id/query_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raise Your Query"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/dashed_line"
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:background="#090909"
+        android:padding="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/query_text"
+        app:layout_constraintVertical_bias="0.01">
+
+    </ImageView>
+
+
+
+    <TextView
+        android:id="@+id/select_department_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Select the department your query is related to :-"
+        android:textSize="16sp"
+        android:textColor="#090909"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@id/dashed_line"
+        app:layout_constraintTop_toBottomOf="@id/dashed_line"
+        app:layout_constraintVertical_bias="0.01">
+
+    </TextView>
+
+
+    <Spinner
+        android:id="@+id/select_document"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:elevation="7dp"
+        app:boxCornerRadiusTopStart="11dp"
+        app:boxCornerRadiusTopEnd="11dp"
+        app:boxCornerRadiusBottomStart="11dp"
+        app:boxCornerRadiusBottomEnd="11dp"
+        android:background="@drawable/background_intro_2"
+        android:entries="@array/department_array"
+
+        app:layout_constraintStart_toStartOf="@id/select_department_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_department_text"
+
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/describe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Describe your query below."
+        android:textColor="#090909"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/select_department_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/age_edit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/background_intro_2"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="@color/black"
+        android:hint="Please mention your query....."
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="@id/describe_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"/>
+
+
+
+
+    <TextView
+        android:id="@+id/area_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Mention the area where the issue occured."
+        android:textColor="#090909"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/describe_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/area_edit"
+        android:layout_width="199dp"
+        android:layout_height="35dp"
+        android:background="@drawable/background_intro_2"
+        android:drawablePadding="10dp"
+        android:paddingStart="5dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="@id/area_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57">
+
+    </EditText>
+
+
+
+
+    <TextView
+        android:id="@+id/since_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Since how many days, the issue arised?"
+        android:textColor="#090909"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/area_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/phone_edit"
+        android:layout_width="199dp"
+        android:layout_height="35dp"
+        android:background="@drawable/background_intro_2"
+        android:drawablePadding="10dp"
+        android:paddingStart="5dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="@id/since_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73">
+
+    </EditText>
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@null"
+        android:src="@drawable/back_btn"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="@null"
+        android:src="@drawable/next_btn"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

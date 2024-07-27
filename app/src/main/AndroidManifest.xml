@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Endore"
         tools:targetApi="31">
         <activity
+            android:name=".RaiseQuery_Activity"
+            android:exported="false" />
+        <activity
             android:name=".chat_sent_by_employee"
             android:exported="false" />
         <activity
@@ -54,7 +57,6 @@
         <activity
             android:name=".User.Login_Activity"
             android:exported="false" />
-
         <activity
             android:name=".employeeSide.taskpage_employee"
             android:exported="false" />
