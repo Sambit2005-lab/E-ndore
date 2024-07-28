@@ -1,10 +1,12 @@
 package com.codexnovas.e_ndore.User;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -12,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +22,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.codexnovas.e_ndore.R;
+import com.codexnovas.e_ndore.RaiseQuery_Activity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
@@ -31,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseFirestore firestore;
     private DocumentReference userDocument;
     private TextView Name;
+    private CardView cardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
         currentUser = auth.getCurrentUser();
+        cardView = findViewById(R.id.myCalendar_card);
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RaiseQuery_Activity.class);
+                startActivity(intent);
+            }
+        });
 
         if (currentUser != null) {
             String userId = currentUser.getUid();

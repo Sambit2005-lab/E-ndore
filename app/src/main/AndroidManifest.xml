@@ -33,9 +33,7 @@
         <activity
             android:name=".User.InfoPageUserSideActivity"
             android:exported="false" />
-        <activity
-            android:name=".formCategory_dialog"
-            android:exported="false" />
+
         <activity
             android:name=".workspace"
             android:exported="false" />

@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.codexnovas.e_ndore.R;
+import com.codexnovas.e_ndore.workspace;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -78,7 +79,7 @@ public class EmployeeRegister extends AppCompatActivity {
         databaseReference.child(employeeId).setValue(employee);
 
         Toast.makeText(EmployeeRegister.this, "Employee Registered", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(EmployeeRegister.this, taskpage_employee.class);
+        Intent intent = new Intent(EmployeeRegister.this, workspace.class);
         startActivity(intent);
     }
 }

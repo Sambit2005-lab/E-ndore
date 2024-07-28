@@ -14,9 +14,7 @@
         android:background="#74F447"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </ImageView>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/dashboard_card"
@@ -30,11 +28,9 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <FrameLayout
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/dashboard_carddesign"
-            >
+            android:background="@drawable/dashboard_carddesign">
 
             <TextView
                 android:id="@+id/dashboard_text"
@@ -44,14 +40,12 @@
                 android:padding="8dp"
                 android:layout_margin="10dp"
                 android:textSize="22sp"
-                android:textStyle="bold">
-
-            </TextView>
+                android:textStyle="bold"/>
 
         </FrameLayout>
 
     </androidx.cardview.widget.CardView>
-    
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -59,21 +53,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dashboard_card"
         app:layout_constraintBottom_toBottomOf="parent">
-        
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/current_task_holder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/dashboard_card"
-                android:layout_margin="18dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_margin="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -86,9 +77,7 @@
                         android:layout_height="wrap_content"
                         android:text="Current Tasks"
                         android:textSize="22sp"
-                        android:layout_weight="2">
-
-                    </TextView>
+                        android:layout_weight="2"/>
 
                     <TextView
                         android:id="@+id/see_all_txtbtn"
@@ -99,58 +88,39 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:textSize="16sp"
-                        android:layout_weight="1"
-                        >
+                        android:layout_weight="1"/>
 
-                    </TextView>
                 </LinearLayout>
 
-                <LinearLayout
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/current_task_recycler"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/current_task_recycler"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                    </androidx.recyclerview.widget.RecyclerView>
-
-                </LinearLayout>
-
-
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"/>
 
             </LinearLayout>
-            
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="18dp"
-                >
+                android:layout_margin="18dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Upcoming Tasks"
-                    android:textSize="22sp"
-                    >
-
-                </TextView>
+                    android:textSize="22sp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/upcoming_tasks_recycler"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                </androidx.recyclerview.widget.RecyclerView>
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
-            
+
         </LinearLayout>
-        
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
