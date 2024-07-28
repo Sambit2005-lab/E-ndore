@@ -1,4 +1,4 @@
-package com.codexnovas.e_ndore;
+package com.codexnovas.e_ndore.User;
 
 // Complaint.java
 public class Complaint {

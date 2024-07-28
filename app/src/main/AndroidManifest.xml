@@ -21,22 +21,22 @@
             android:name=".RaiseQuery_Activity"
             android:exported="false" />
         <activity
-            android:name=".documentSharing"
+            android:name=".employeeSide.documentSharing"
             android:exported="false" />
         <activity
             android:name=".workStatusdisplay"
             android:exported="false" />
         <activity
-            android:name=".dataRetrieval"
+            android:name=".employeeSide.dataRetrieval"
             android:exported="false" />
         <activity
-            android:name=".chat_sent_by_employee"
+            android:name=".employeeSide.chat_sent_by_employee"
             android:exported="false" />
         <activity
             android:name=".LicencePermit_Activity"
             android:exported="false" />
         <activity
-            android:name=".chat_sent"
+            android:name=".employeeSide.chat_sent"
             android:exported="false" />
         <activity
             android:name=".UploadPage_Activity"
@@ -46,13 +46,13 @@
             android:exported="false" />
 
         <activity
-            android:name=".workspace"
+            android:name=".employeeSide.workspace"
             android:exported="false" />
         <activity
             android:name=".User.LandDetails_Activity"
             android:exported="false" />
         <activity
-            android:name=".CommunityActivity"
+            android:name=".User.CommunityActivity"
             android:exported="false" />
         <activity
             android:name=".Host_Task_Activity"

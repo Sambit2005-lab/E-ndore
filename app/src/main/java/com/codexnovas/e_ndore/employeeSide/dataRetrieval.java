@@ -1,4 +1,4 @@
-package com.codexnovas.e_ndore;
+package com.codexnovas.e_ndore.employeeSide;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.codexnovas.e_ndore.R;
 import com.codexnovas.e_ndore.User.User;
 import com.codexnovas.e_ndore.User.UserAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;

@@ -1,4 +1,4 @@
-package com.codexnovas.e_ndore;
+package com.codexnovas.e_ndore.employeeSide;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -15,8 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.codexnovas.e_ndore.employeeSide.ChatAdapter;
-import com.codexnovas.e_ndore.employeeSide.ChatMessage;
+import com.codexnovas.e_ndore.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;

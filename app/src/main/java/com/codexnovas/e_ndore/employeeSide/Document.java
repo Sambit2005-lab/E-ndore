@@ -1,4 +1,4 @@
-package com.codexnovas.e_ndore;
+package com.codexnovas.e_ndore.employeeSide;
 
 public class Document {
     private String title;

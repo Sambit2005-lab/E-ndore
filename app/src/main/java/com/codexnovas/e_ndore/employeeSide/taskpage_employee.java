@@ -9,8 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.codexnovas.e_ndore.Complaint;
-import com.codexnovas.e_ndore.ComplaintsAdapter;
+import com.codexnovas.e_ndore.User.Complaint;
+import com.codexnovas.e_ndore.User.ComplaintsAdapter;
 import com.codexnovas.e_ndore.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".employeeSide.taskpage_employee">
 
+
+
     <ImageView
         android:id="@+id/task_home_bkcg"
         android:layout_width="match_parent"
@@ -15,6 +17,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/searchbar_"
+        app:layout_constraintBottom_toTopOf="@+id/dashboard_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/dashboard_card"
