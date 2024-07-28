@@ -21,16 +21,7 @@ public class workspace extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workspace);
 
-        button = findViewById(R.id.bottom_sheet_btn);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                workspace_tools_bottomsheet bottomsheetfragment =new workspace_tools_bottomsheet();
-                bottomsheetfragment.show(getSupportFragmentManager(),bottomsheetfragment.getTag());
-
-            }
-        });
 
 
         openChatFragment("workspace_id");

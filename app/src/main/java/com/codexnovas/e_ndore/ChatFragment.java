@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,6 +34,7 @@ public class ChatFragment extends Fragment {
     private ChatAdapter chatAdapter;
     private FirebaseFirestore db;
     private String workspaceId;
+    private AppCompatButton bottomSheetBtn;
 
     @SuppressLint("MissingInflatedId")
     @Nullable
@@ -43,10 +45,24 @@ public class ChatFragment extends Fragment {
         recyclerView = view.findViewById(R.id.chat_area);
         textInput = view.findViewById(R.id.text_input);
         sendButton = view.findViewById(R.id.send);
+        bottomSheetBtn = view.findViewById(R.id.bottom_sheet_btn);
+
+        bottomSheetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                workspace_tools_bottomsheet bottomsheetfragment = new workspace_tools_bottomsheet();
+                bottomsheetfragment.show(getParentFragmentManager(), bottomsheetfragment.getTag());
+            }
+        });
+
+
+
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         chatAdapter = new ChatAdapter(new ArrayList<>());
         recyclerView.setAdapter(chatAdapter);
+
+
 
         db = FirebaseFirestore.getInstance();
 
