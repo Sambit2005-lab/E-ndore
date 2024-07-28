@@ -21,6 +21,15 @@
             android:name=".RaiseQuery_Activity"
             android:exported="false" />
         <activity
+            android:name=".documentSharing"
+            android:exported="false" />
+        <activity
+            android:name=".workStatusdisplay"
+            android:exported="false" />
+        <activity
+            android:name=".dataRetrieval"
+            android:exported="false" />
+        <activity
             android:name=".chat_sent_by_employee"
             android:exported="false" />
         <activity
