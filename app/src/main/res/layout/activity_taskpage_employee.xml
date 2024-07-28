@@ -42,6 +42,96 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
 
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_gravity="center"
+              android:layout_marginTop="20dp"
+              android:weightSum="3">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:weightSum="1"
+                  android:layout_margin="16dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Pending"
+                      android:textSize="18sp"
+                      >
+
+                  </TextView>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="08"
+                      android:textSize="40sp">
+
+                  </TextView>
+
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:weightSum="1"
+                  android:layout_margin="10dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="18sp"
+                      android:text="Completed"
+                      >
+
+                  </TextView>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="22"
+                      android:textSize="40sp">
+
+                  </TextView>
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:weightSum="1"
+                  android:layout_margin="10dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Total Cases"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      >
+
+                  </TextView>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="30"
+                      android:textSize="40sp">
+
+                  </TextView>
+
+              </LinearLayout>
+
+          </LinearLayout>
+
         </FrameLayout>
 
     </androidx.cardview.widget.CardView>
